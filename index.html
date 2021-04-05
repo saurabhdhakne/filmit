@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuj</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/db006bf474.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+        body{
+            margin:0;
+            padding:0;
+            font-family: 'Dela Gothic One', cursive;
+            background: #1b1b1b;
+            color: snow;
+        }
+        a{
+            color: snow;
+        }
+        main{
+            height: 100vh;
+        }
+        .logo{
+            width: 100px;
+        }
+        .btn{
+            padding: 10px 10%;
+            background: snow;
+            color: black;
+            border: 3px solid black;
+            transition: .5s all;
+        }
+        .btn:hover{
+            box-shadow: .5px 5px 15px rgba(0, 0, 0, .5);
+            background: #000000;
+            color: lavender;
+            border-radius: 30px; 
+        }
+        #carouselExampleSlidesOnly{
+            height: 100vh; position: absolute;right: 0;top: 0;
+        }
+        .carousel img{
+            height: 100vh; float: right;
+        }
+        @media only screen and (max-width: 720px) {
+            .display-3{
+                font-size: 16vw;
+            }
+            #carouselExampleSlidesOnly{
+            height: auto;position: relative;
+            }
+            .carousel img{
+                width: 100%; 
+                height: auto;
+            }   
+        
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row main">
+            <div class="col-md-6 text-center">
+                <img src="./images/logo.png" class="img logo mt-5" alt="">
+
+                <h1 class="text-center display-3 mt-5">
+                    LET'S <br>
+                    WRITE <br>
+                    YOUR  <br>
+                    STORY <br>
+                </h1>
+                <div class="col-12 text-center mt-5">
+                    <input type="button" onclick="window.location='home.html'" class="btn btn-lg " value="Explore Website">
+                </div>
+                <a href="https://www.instagram.com/filmitproductions" class="display-3 ">
+                    <i class="fa fa-instagram mt-5" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div id="carouselExampleSlidesOnly" class="p-0 carousel slide col-md-6" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active bg-dark">
+                        <img src="./images/imgMain3.jpg" alt="">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/imgMain2.jpg"  alt="">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/imgMain.jpg"  alt="">
+                      </div>
+                    </div>
+            </div>
+           
+            
+        </div>
+    </div>
+ 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

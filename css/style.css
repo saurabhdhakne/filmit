@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Dela Gothic One', cursive;
+}
+.logo{
+    width: 100px;
+}
+.btn{
+    padding: 10px 10%;
+    background: snow;
+    color: black;
+    border: 3px solid black;
+    transition: .5s all;
+}
+.btn:hover{
+    box-shadow: .5px 5px 15px rgba(0, 0, 0, .5);
+    background: #1b1b1b;
+    color: lavender;
+    border-radius: 30px; 
+}
+
+.carousel img{
+    width: 100%;
+}
+.nav{
+    z-index: 99;
+    font-family: 'Kanit', sans-serif;
+    cursor: pointer;
+    transition: .5s all;
+
+}
+.nav a:hover{
+    text-decoration: none;
+    font-weight: 1000;
+}
+.crd{
+    padding: 10px;
+}
+.portfolio img{
+    width: 100%;
+    transition: .5s all;
+    border-radius: 5px;
+}
+.portfolio h1{
+    margin-bottom: 10vh;
+}
+.portfolio h4{
+    font-family: 'Kanit', sans-serif;
+
+}
+.portfolio img:hover{
+    width: 90%;
+    transition: .5s all;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: .5px 6px 10px rgba(0, 0, 0, .8);
+}
+
+.instagram img{
+    width: 100%;
+    transition: .5s all;
+    border-radius: 5px;
+}
+.instagram h4{
+    margin-bottom: 10vh;
+    font-family: 'Kanit', sans-serif;
+
+}
+.instagram img:hover{
+    width: 90%;
+    transition: .5s all;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: .5px 6px 10px rgba(0, 0, 0, .8);
+}
+
+.stories img{
+    width: 100%;
+    transition: .5s all;
+    border-radius: 5px;
+}
+.stories h1{
+    margin-bottom: 10vh;
+}
+.stories h4,h5{
+    font-family: 'Kanit', sans-serif;
+
+}
+.stories img:hover{
+    width: 90%;
+    transition: .5s all;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: .5px 6px 10px rgba(0, 0, 0, .8);
+}
+.stories .btn{
+    border: 2px solid black;
+    font-family: 'Kanit', sans-serif;
+}
+.footer{
+    background: #836953 ;
+    color: snow;
+    padding-bottom: 50px;
+}
+.footer img{
+    width: 100%;
+    transition: .5s all;
+    border-radius: 5px;
+}
+.footer h4,h5{
+    font-family: 'Kanit', sans-serif;
+
+}
+.footer .btn{
+    border: 1px solid black;
+    font-family: 'Kanit', sans-serif;
+    padding: 10px 3% ;
+    border-radius: 40px;
+}
+.footer .btn:hover{
+    border-radius: 5px;
+    
+}
+.classfinal{
+    background: #302f2f;
+    color: snow;
+    transition: .5s all;
+}
+.classfinal a{
+    color: snow;    
+}
+.classinitial, .classinitial a{
+    color: black;
+    background: transparent;
+    transition: .5s all;
+}
+
+.photography {
+    margin-top: 20vh;
+}
+.photography h1{
+    color: black;
+}
+.photography h1{
+    text-decoration: none;
+    list-style: none;
+}
+.photography img:hover{
+    padding: 0;
+    margin: 0;
+}
+.photography img{
+    width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:  #302f2f;
+    border-radius: 10px;
+}
+.navMob, .navMob a{
+    display: none;
+}
+
+.sidenav {
+    margin-top: 10vh;
+    height: 90vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: 'Kanit', sans-serif;
+
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #e7e7e7;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 720px) {
+    .sidenav {padding-top: 10vh;}
+    .sidenav a {font-size: 18px;}
+  }
+@media only screen and (max-width: 720px) {
+
+    #nav a, #nav img, #nav, .classfinal, .classinitial{
+        display: none;
+        background: none;
+    }
+    #carouselExampleControls{
+        margin-top: 10vh;
+    }
+    .navMob{
+        display: block;
+        z-index: 999;
+        background:  #302f2f;
+        
+    }
+    .navMob a{
+        color: snow;
+        display: block;
+    }
+    .instagram .crd{
+        padding: 0;
+    }
+    .instagram img{
+        margin-bottom: 25px;
+    }
+    .instagram img:hover{
+        margin-top: 10px;
+    }
+    .portfolio h1, .stories h1, .instagram h1, .footer h1{
+        font-size: 10vw;
+    }
+    .stories h4, .instagram h4, .footer h4{
+        font-size: 4vw;
+     }
+     .stories h4{
+         font-size: 8vw;
+     }
+     .footer .btn{
+         padding: 15px 10%;
+     }
+    .photography h1{
+        font-size: 10vw;
+    }
+}
