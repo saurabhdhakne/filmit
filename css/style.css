@@ -1,27 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 body{
     margin:0;
     padding:0;
-    font-family: 'Dela Gothic One', cursive;
+    font-family: 'Montserrat', sans-serif;
+    color: #333333; 
+}
+h1{
+    font-family: 'ELEPHANT';
 }
 .logo{
     width: 100px;
 }
+#imgWhite{
+    display: none;
+}
 .btn{
     padding: 10px 10%;
     background: snow;
-    color: black;
-    border: 3px solid black;
+    color: #333333;
+    border: 2px solid #333333;
     transition: .5s all;
+    border-radius: 0;
+}
+.btnE{
+    background: transparent;
+    color: snow;
+    border: 2px solid white;
+
+}
+.btnE2{
+    background: transparent;
+    color: #333333;
+    border: 2px solid #333333;
+
 }
 .btn:hover{
-    box-shadow: .5px 5px 15px rgba(0, 0, 0, .5);
-    background: #1b1b1b;
+    /* box-shadow: .5px 5px 15px rgba(0, 0, 0, .5); */
+    background: #333333;
     color: lavender;
-    border-radius: 30px; 
 }
-
+.btnE:hover{
+    background: white;
+    color:  #333333;
+}
+.btnE2:hover{
+    background: #333333;
+    color:  white;
+}
 .carousel img{
     width: 100%;
 }
@@ -30,11 +58,10 @@ body{
     font-family: 'Kanit', sans-serif;
     cursor: pointer;
     transition: .5s all;
-
 }
+
 .nav a:hover{
     text-decoration: none;
-    font-weight: 1000;
 }
 .crd{
     padding: 10px;
@@ -45,10 +72,10 @@ body{
     border-radius: 5px;
 }
 .portfolio h1{
-    margin-bottom: 10vh;
+    margin-bottom: 2vh;
 }
 .portfolio h4{
-    font-family: 'Kanit', sans-serif;
+    
 
 }
 .portfolio img:hover{
@@ -58,6 +85,44 @@ body{
     cursor: pointer;
     box-shadow: .5px 6px 10px rgba(0, 0, 0, .8);
 }
+.brands{
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+.brands img{
+    transition: .5s all;
+    width: 100%;
+    /* background: rgb(126, 183, 236); */
+}
+.brands .imgContainer{
+    padding:20px;
+    transition: .5s all;
+    border-radius: 0px;
+    background: rgb(255, 255, 255);
+    height: 100%;
+    border-radius:50%;
+    box-shadow: .5px 2px 10px rgba(0, 0, 0, .8);
+    overflow: hidden;
+}
+.brands .malbar{
+    background: #7b0b4a;
+}
+.brands .bs{
+    background: black;
+}
+.brands .imgContainer:hover{
+    /* transform: rotate(10deg); */
+    /* border: 4px solid rgb(32, 32, 32); */
+    /* border-radius: 10px; */
+    /* background: rgb(160, 241, 237); */
+    /* background: rgb(232, 175, 255); */
+    box-shadow: 0px 0px 0px;
+    transition: .5s all;
+    cursor: pointer;
+}
+.brands h1{
+    margin-bottom: 10vh;
+}
 
 .instagram img{
     width: 100%;
@@ -66,7 +131,6 @@ body{
 }
 .instagram h4{
     margin-bottom: 10vh;
-    font-family: 'Kanit', sans-serif;
 
 }
 .instagram img:hover{
@@ -86,8 +150,6 @@ body{
     margin-bottom: 10vh;
 }
 .stories h4,h5{
-    font-family: 'Kanit', sans-serif;
-
 }
 .stories img:hover{
     width: 90%;
@@ -103,7 +165,6 @@ body{
 .footer{
     background: #836953 ;
     color: snow;
-    padding-bottom: 50px;
 }
 .footer img{
     width: 100%;
@@ -111,18 +172,15 @@ body{
     border-radius: 5px;
 }
 .footer h4,h5{
-    font-family: 'Kanit', sans-serif;
 
 }
 .footer .btn{
-    border: 1px solid black;
-    font-family: 'Kanit', sans-serif;
+    border: 1px solid #333333;
+
     padding: 10px 3% ;
-    border-radius: 40px;
 }
 .footer .btn:hover{
-    border-radius: 5px;
-    
+    /* border-radius: 5px; */
 }
 .classfinal{
     background: #302f2f;
@@ -158,7 +216,7 @@ body{
 
 /* width */
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
 }
 
 /* Track */
@@ -169,7 +227,7 @@ body{
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background:  #302f2f;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 .navMob, .navMob a{
     display: none;
@@ -209,7 +267,10 @@ body{
     font-size: 36px;
     margin-left: 50px;
   }
-  
+  .footer2{
+    background: black;
+    color: snow;
+}
   @media screen and (max-height: 720px) {
     .sidenav {padding-top: 10vh;}
     .sidenav a {font-size: 18px;}
@@ -233,6 +294,27 @@ body{
         color: snow;
         display: block;
     }
+  
+    .brands .imgContainer{
+        padding:15px;
+        transition: .5s all;
+        border-radius: 0px;
+        background: rgb(255, 255, 255);
+        height: 100px;
+        width: 100px;
+        border-radius:50%;
+        box-shadow: .5px 2px 10px rgba(0, 0, 0, .8);
+        overflow: hidden;
+    }
+    .brands .malbar{
+        background: #7b0b4a;
+    }
+    .brands .bs{
+        background: black;
+    }
+    .brands h1{
+        margin-bottom: 5vh;
+    }
     .instagram .crd{
         padding: 0;
     }
@@ -242,14 +324,18 @@ body{
     .instagram img:hover{
         margin-top: 10px;
     }
-    .portfolio h1, .stories h1, .instagram h1, .footer h1{
+    .portfolio h1, .stories h1, .instagram h1, .footer h1, .brands h1{
         font-size: 10vw;
     }
-    .stories h4, .instagram h4, .footer h4{
+    .stories h4, .instagram h4, .footer h4,.portfolio h4{
         font-size: 4vw;
      }
      .stories h4{
          font-size: 8vw;
+     }
+     .footer{
+         padding: 5vh 5%;
+         text-align: center;
      }
      .footer .btn{
          padding: 15px 10%;
@@ -257,4 +343,8 @@ body{
     .photography h1{
         font-size: 10vw;
     }
+}
+
+.nav a{
+    color: snow;
 }
