@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anuj</title>
+    <title>FILMit Productions</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://use.fontawesome.com/db006bf474.js"></script>
+    <link rel="shortcut icon" href="./imgs/logoBlack.png" type="image/x-icon">  
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
@@ -47,19 +48,26 @@
         .carousel img{
             height: 100vh; float: right;
         }
-        h1{
+        .display-2{
             margin-top: 15vh;
         }
         .insta{
             position: absolute;
             bottom: 5vh;
         }
-        @media only screen and (max-width: 720px) {
-            .display-3{
-                font-size: 16vw;
+        .mainText{
+            min-height:100vh;background:url('./imgs/bg2.jpg');background-size:cover;
+        }
+        @media only screen and (max-width: 1025px) {
+
+            .display-2{
+                font-size: 18vw;
+            margin-top: 7vh;
             }
             #carouselExampleSlidesOnly{
-            height: auto;position: relative;
+                margin-top: 90vh;
+                width: 100%;
+                height: auto;
             }
             .carousel img{
                 width: 100%; 
@@ -67,17 +75,28 @@
             }   
             .insta{
                 position: relative;
-                margin-top: 20vh;
+                margin-top: 8vh;
             }
         
         }
+        @media only screen and (max-width: 900px) {
+            #carouselExampleSlidesOnly{
+                margin-top: 100vh;
+            }
+            
+            main{
+                min-height: 100vh;
+            }
+
+        }
+
     </style>
 </head>
 <body>
 
     <div class="container-fluid">
         <div class="row main">
-            <div class="col-md-8 text-center"style="min-height:100vh;background:url('./imgs/bg2.jpg');background-size:cover;">
+            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 text-center mainText">
                 <img src="./imgs/logoBlack.png" class="img logo mt-5" alt="">
 
                 <h1 class="text-center display-2">
@@ -89,11 +108,11 @@
                 <div class="col-12 text-center mt-5">
                     <input type="button" onclick="window.location='home.html'" class="btn btn-lg font-weight-bold" value="ENTER WEBSITE">
                 </div>
-                <a href="https://www.instagram.com/filmit_productions" class="h3 pt-5 ">
-                    <i class="fa fa-instagram mt-5 insta" aria-hidden="true"></i>
+                <a href="https://www.instagram.com/filmit_productions pt-5" class="h3 pt-5 ">
+                    <i class="fa fa-instagram insta" aria-hidden="true"></i>
                 </a>
             </div>
-            <div id="carouselExampleSlidesOnly" class="p-0 carousel slide col-md-6" data-ride="carousel">
+            <div id="carouselExampleSlidesOnly" class="p-0 carousel slide col-lg-6 col-md-12" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active bg-dark">
                         <img src="./imgs/wedding-min/A(1).jpg" alt="">

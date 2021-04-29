@@ -271,11 +271,12 @@ h1{
     background: black;
     color: snow;
 }
-  @media screen and (max-height: 720px) {
+  @media screen and (max-height: 1025) {
     .sidenav {padding-top: 10vh;}
     .sidenav a {font-size: 18px;}
   }
-@media only screen and (max-width: 720px) {
+  
+@media only screen and (max-width: 1025) {
 
     #nav a, #nav img, #nav, .classfinal, .classinitial{
         display: none;
